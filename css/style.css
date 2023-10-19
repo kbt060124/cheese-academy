@@ -1,0 +1,834 @@
+/* ここから下に記載していく */
+
+/* 共通要素 */
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: source-han-serif-japanese,"ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","游明朝体",YuMincho,"Yu Mincho","ＭＳ Ｐ明朝","MS PMincho",serif;
+  word-wrap: break-word;
+  line-height: 160%;
+  font-weight: 300;
+  font-synthesis: none;
+  backface-visibility: hidden;
+  direction: ltr;
+  color: #232323;
+  font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.h3, h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+
+/* <!-- /header --> */
+
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  height: 65px;
+  width: 100%;
+  background-color: rgba(34, 49, 52, 0.9);
+}
+
+.header__wrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+}
+
+.header--logo img {
+  height: 40px;
+  margin: 5% 5%;
+  filter: invert(100%);
+}
+
+header .nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav--items{
+  display: flex;
+}
+
+.nav--item a{
+  padding: 50px 50px 50px 0;
+  color: white;
+  text-decoration: none;
+  font-size: larger;
+}
+
+/* <!-- /hero --> */
+#hero__wrapper{
+  position: relative;
+}
+
+#hero--slider {
+  width: 100%;
+  height: 100vh;/*スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
+}
+
+#hero--slider h1{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 6rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#hero--slider h2{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 2.5rem;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#hero--slider h3 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 6rem;
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#hero--slider h4 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 2.5rem;
+  top: 35%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#hero--slider h5 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 6rem;
+  top: 80%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#hero--slider h6 {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-size: 2.5rem;
+  top: 95%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#hero--slider dl {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 6rem;
+  font-weight: bolder;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+#hero--slider p {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+/* <!-- /#index --> */
+
+/* <!-- 共通要素 --> */
+.text-center {
+  text-align: center!important;
+}
+
+a.btn {
+  display: block;
+  font-size: 15px !important;
+  background: #444;
+  color: #fff !important;
+  border: 2px solid #444;
+  padding: .6em 2em;
+  margin: 5px auto;
+  width: 10%;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.cy {
+  color: #ffd61a;
+  text-shadow: 0.7px 0 0 dimgray;
+}
+
+.bgg {
+  background-color: #f5f5f5;
+}
+
+.mb40 {
+  margin-bottom: 40px!important;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  margin-left: -20px;
+}
+
+.order-lg-1 {
+  order: 1;
+}
+
+.order-lg-2 {
+  order: 2;
+}
+
+.col-lg-6 {
+  flex: 0 0 50%;
+  width: 50%;
+}
+
+.col-md-6 {
+  flex: 0 0 50%;
+  width: 50%;
+}
+
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.lazyloaded {
+  transition: all .4s cubic-bezier(.165,.84,.44,1);
+  transition-timing-function: cubic-bezier(.165,.84,.44,1);
+  transition-property: opacity;
+  opacity: 1;
+}
+
+.content--inner{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section--title{
+  /* color: #05173f; */
+  font-size: 4rem;
+  letter-spacing: 4px;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.section--title span.section--title__ja {
+  display: block;
+  font-size: 1.3rem;
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.d-flex {
+  display: flex!important;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+/* <!-- /index__about --> */
+#index .order-lg-2 {
+  position: relative;
+}
+
+#index #index__about .index__about--bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mainbg.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+#index #index__about .about__wrapper {
+  width: 440px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 40px 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* color: #05173f; */
+}
+
+#index #index__about .about--heading {
+  margin-bottom: 20px;
+  line-height: 180%;
+  letter-spacing: 2px;
+}
+
+#index #index__about .about--body {
+  text-align: justify;
+  line-height: 180%;
+}
+
+/* <!-- /index__teacher --> */
+
+#index__teacher .teacher__wrapper {
+  display: block;
+  color: #fff;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 750px;
+}
+
+#index__teacher .teacher__wrapper--str {
+  width: 100%;
+  flex-basis: 100%;
+  z-index: 2;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px black;
+  font-family: adobe-garamond-pro,source-han-serif-japanese,"ヒラギノ明朝 Pro W3","Hiragino Mincho Pro","游明朝体",YuMincho,"Yu Mincho","ＭＳ Ｐ明朝","MS PMincho",serif;
+  color: #f0f8ff;
+}
+
+#index__teacher .teacher__wrapper .teacher__wrapper--img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: all 1s cubic-bezier(.19,1,.22,1);
+  transition-timing-function: cubic-bezier(.19,1,.22,1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#index__teacher .teacher__wrapper .teacher--img1{
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/teacher_01.jpg);
+}
+
+#index__teacher .teacher__wrapper .teacher--img2{
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/teacher_02.jpg);
+}
+
+#index__teacher .teacher__wrapper .teacher--img3{
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/teacher_03.jpg);
+}
+
+#index__teacher .teacher__wrapper .teacher--img4{
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/teacher_04.png);
+}
+
+/* <!-- /index__course --> */
+
+.goods__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+.reviewBox {
+  display: block;
+  max-width: 30%;
+  background: #FAFAFA;
+  border: 1px solid #DBDBDB;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 10px;
+}
+
+.reviewBox .reviewBox_content {
+  padding: 30px;
+}
+
+.reviewBox .reviewBox_title1 {
+  margin: 0;
+  padding: 12px;
+  background: #DBDBDB;
+  text-align: center;
+  font-size: 1.3rem !important;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  line-height: 1.3em;
+  border: none;
+}
+
+.reviewBox .reviewBox_title2 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  border: none;
+}
+
+.reviewBox .reviewBox_title2:before {
+  content: none !important;
+}
+
+.reviewBox .reviewBox_top {
+  margin: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  height: 220px;
+  width: 100%;
+}
+
+.reviewBox .reviewBox_top p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em;
+  padding-bottom: 12px;
+  font-size: 1rem !important;
+}
+
+.reviewBox .reviewBox_top p:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 600;
+  padding-right: 5px;
+  font-size: .8em;
+}
+
+.reviewBox .reviewBox_top .reviewBox_left,
+.reviewBox .reviewBox_top .reviewBox_right {
+  width: 50%;
+}
+
+.reviewBox .reviewBox_top .reviewBox_right img {
+  display: block;
+  margin: auto;
+  width: 160px;
+}
+
+.reviewBox .reviewBox_center {
+  margin-top: 10px;
+}
+
+.reviewBox .reviewLink {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.reviewBox .reviewLink a {
+  font-size: 1.3rem !important;
+  background: #444;
+  color: #fff !important;
+  border: 2px solid #444;
+  padding: .5em 1em;
+  margin: 5px;
+  width: 50%;
+  text-align: center;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+/* .reviewBox .reviewLink a:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f138";
+  font-weight: 600;
+  padding-right: 5px;
+} */
+
+.reviewBox .reviewBox_center {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 20px 0;
+}
+
+.reviewBox .reviewBox_center .progress-circle {
+  width: 25%;
+  margin: auto;
+}
+
+.reviewBox .progress-circle {
+  font-size: 12px !important;
+  margin: 20px;
+  position: relative;
+  /* so that children can be absolutely positioned */
+  padding: 0;
+  width: 5em !important;
+  height: 5em !important;
+  background-color: #FBEFC6;
+  border-radius: 50%;
+  line-height: 5em;
+}
+
+.reviewBox .reviewBox_score {
+  font-size: 13px !important;
+  text-align: center;
+  line-height: 1em;
+  z-index: 4;
+  padding-top: 5.5em;
+  display: block;
+  font-weight: 600;
+}
+
+.reviewBox .reviewBox_score p {
+  margin: 0;
+  font-size: 0.9rem !important;
+  width: 120% !important;
+  margin-left: -10% !important;
+}
+
+
+
+.reviewBox .progress-circle:after {
+  border: none;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  text-align: center;
+  display: block;
+  border-radius: 50%;
+  width: 4em;
+  height: 4em;
+  background-color: #FAFAFA;
+  content: " ";
+}
+
+.reviewBox .progress-circle .progress-text {
+  position: absolute;
+  line-height: 2.6em;
+  width: 2.6em;
+  text-align: center;
+  display: block;
+  color: #444 !important;
+  font-size: 23px !important;
+  z-index: 2;
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", HelveticaNeue, "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Sogoe UI", Verdana, "メイリオ", Meiryo, sans-serif;
+}
+
+.reviewBox .left-half-clipper {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  position: absolute;
+  /* needed for clipping */
+  clip: rect(0, 5em, 5em, 2.5em);
+  /* clips the whole left half*/
+}
+
+.reviewBox .progress-circle.over50 .left-half-clipper {
+  clip: rect(auto, auto, auto, auto);
+}
+
+.reviewBox .value-bar {
+  position: absolute;
+  /*needed for clipping*/
+  clip: rect(0, 2.5em, 5em, 0);
+  width: 5em !important;
+  height: 5em !important;
+  border-radius: 50%;
+  border: 0.5em solid #FCCB28;
+  box-sizing: border-box;
+
+}
+
+.reviewBox .progress-circle.over50 .first50-bar {
+  position: absolute;
+  /*needed for clipping*/
+  clip: rect(0, 5em, 5em, 2.5em);
+  background-color: #FCCB28;
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+}
+
+.reviewBox .progress-circle:not(.over50) .first50-bar {
+  display: none;
+}
+
+
+.reviewBox .progress-circle.p0 .value-bar {
+  display: none;
+}
+
+.reviewBox .progress-circle.p1 .value-bar {
+  transform: rotate(4deg);
+}
+
+.reviewBox .progress-circle.p10 .value-bar {
+  transform: rotate(36deg);
+}
+
+.reviewBox .progress-circle.p20 .value-bar {
+  transform: rotate(72deg);
+}
+
+.reviewBox .progress-circle.p30 .value-bar {
+  transform: rotate(108deg);
+}
+
+.reviewBox .progress-circle.p40 .value-bar {
+  transform: rotate(144deg);
+}
+
+.reviewBox .progress-circle.p50 .value-bar {
+  transform: rotate(180deg);
+}
+
+.reviewBox .progress-circle.p60 .value-bar {
+  transform: rotate(216deg);
+}
+
+.reviewBox .progress-circle.p70 .value-bar {
+  transform: rotate(252deg);
+}
+
+.reviewBox .progress-circle.p80 .value-bar {
+  transform: rotate(288deg);
+}
+
+.reviewBox .progress-circle.p90 .value-bar {
+  transform: rotate(324deg);
+}
+
+.reviewBox .progress-circle.p100 .value-bar {
+  transform: rotate(360deg);
+}
+
+/* <!-- /.index__access --> */
+
+#index__access .map{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+#index__access .access__wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+/* #index__access .access__wrapper .access__wrapper--table{
+  margin-bottom: 60px;
+} */
+
+#index__access .access__wrapper .access__wrapper--table tr{
+  height: 50px;
+}
+
+#index__access .access__wrapper .access__wrapper--table td{
+  padding-top: 30px;
+  padding-right: 10px;
+  font-size: 1.1rem;
+}
+/* <!-- /.index__contact --> */
+
+#index__contact .contact__wrapper p{
+  font-size: 1.1rem !important;
+}
+
+#index__contact .contact__wrapper p{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#index__contact .form__wrapper{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+#index__contact .form--table{
+  border-collapse: collapse; 
+  border-top:3px solid #bfbfbf;
+  border-bottom:3px solid #bfbfbf;
+}
+
+#index__contact .form--table tr {
+  border-bottom:1px solid #bfbfbf;
+}
+
+#index__contact .form--table th {
+  width: 240px;
+  padding-top: 8px;
+  padding-right: 64px;
+  padding-left: 16px;
+  text-align: left;
+  vertical-align: top;
+  border-right:3px solid #bfbfbf;
+}
+
+#index__contact .form--table td {
+  width: 400px;
+  padding: 8px 0 8px 8px;
+}
+
+#index__contact .form--table input {
+  width: 328px;
+  padding-left: 8px;
+}
+
+#index__contact .form--table textarea{
+  width: 328px;
+  padding-left: 8px;
+}
+
+#index__contact .form--table p{
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 1.1rem !important;
+}
+
+#index__contact .checkbox--list{
+  text-align: left;
+}
+
+#index__contact .checkbox--list input{
+  width: auto;
+  margin-bottom: 24px;
+}
+
+
+/* <!-- /footer --> */
+
+footer{
+  display: flex;
+  justify-content: center;
+  /* margin-top: 140px; */
+  padding: 30px 0;
+  color: white;
+  background-color: #707070;
+}
+
+td.ta2 input{
+  bottom: 0;
+}
+
+/* Loading背景画面設定　*/
+#splash {
+  /*fixedで全面に固定*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background:white;
+    text-align:center;
+    color:#fff;
+  }
+  
+  /* Loading画像中央配置　*/
+  #splash_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Loading アイコンの大きさ設定　*/
+  #splash_logo img {
+    width:500px;
+  }
+  
+  /* fadeUpをするアイコンの動き */
+  .fadeUp{
+  animation-name: fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+  }
+  
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+
